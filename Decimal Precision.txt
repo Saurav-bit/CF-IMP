@@ -1,0 +1,16 @@
+to print n zeros after decimal
+
+store the variable as double 
+and use printf 0.nf where n is no. decimal points
+
+
+
+double prin=0.0;
+                printf("%0.6f",prin);
+
+
+double pr=min(prin1,prin);
+    printf("%0.6f",pr);
+     return;
+
+Ques 1555B
