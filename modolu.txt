@@ -1,0 +1,138 @@
+ATCODER 238C
+
+#include<bits/stdc++.h>
+typedef long long int ll ;
+#define pb push_back
+#define rep(i,k,n) for (i = k; i < n; i++)
+#define coy cout<<"Yes"
+#define con cout<<"No"
+using namespace std;
+
+
+vector<ll>ans;
+const ll mad=1e9+7;
+//M = 100000009
+const unsigned long long int M = 1001;
+//ll sieve[1000000009];
+vector<ll>sieve(1001,0);
+
+//const unsigned int n=10000005;
+
+
+
+
+
+ll mod(ll a, ll m)
+{
+	return (a%m + m) % m;
+}
+
+
+
+
+
+
+void fun()
+{
+
+    // @@@@  KEEEP AT IT... @@@@@
+    //  ###  ALL YOUR HARD WORK IS NOT IN VAIN ####
+    // <<  KEEP
+    //     <<  GOING
+    //    >>    IT WILL PAYYY
+    //                     >>    OFFF
+    //        <<  ONE DAY IT WILL >>
+
+
+    ll l,r,n,i,j,c,b,m,k,a,q,x,y;
+    cin>>n;
+
+    ll mo=998244353;
+
+    ll nn=n;
+    ll cnt=0;
+
+    while(nn>0)
+    {
+        cnt++;
+        nn=nn/10;
+    }
+
+    x=0;
+    rep(i,0,cnt-1)
+    {
+        a=9*(power(10,i));
+        y=((a%mo)*((a+1)%mo))/2;
+
+//        x=mod(x*y,mo);
+
+        x=(x+y);
+
+
+
+    }
+
+    a=power(10,cnt-1);
+
+    a=((n-a)+1);
+//    cout<<x<<" ";
+    y=((a%mo)*((a+1)%mo))/2;
+
+//    ll yx=mod(y,mo);
+
+//    cout<<x<< " "<<yx<<"\n";
+//    ll xy=(((x)%mo)+((y+mo)%mo));
+    ll xy=(x+y)%mo;
+
+    cout<<(xy);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int main()
+{
+
+int t;
+
+
+
+
+
+
+
+t=1;
+//cin>>t;
+ while(t--)
+ {
+     fun();
+     cout<<"\n";
+//     cout<<fflush();
+
+    }
+
+
+}
