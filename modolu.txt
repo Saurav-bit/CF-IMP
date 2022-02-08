@@ -72,6 +72,8 @@ void fun()
 
     }
 
+
+// prod=((prod%mo)*((res[i+1].second-res[i].second)%mo))%mo;
     a=power(10,cnt-1);
 
     a=((n-a)+1);
